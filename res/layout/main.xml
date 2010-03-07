@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    >
+	    <LinearLayout 
+	    	android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    >
+		    <LinearLayout 
+		    	android:orientation="horizontal"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		    >
+			    <Button android:id="@+id/BClear" android:layout_width="wrap_content" 
+			    	android:layout_height="fill_parent"  android:text="Clear"	
+			    	android:layout_weight="1"	
+			    	/> 
+			    <CheckBox android:id="@+id/checkbox_optimised"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="Opt" />
+			    <Button android:id="@+id/BHist" 
+			    	android:layout_width="wrap_content" 
+			    	android:layout_height="fill_parent" 
+			    	android:layout_weight="1" android:text="Hist"	/>
+				    
+			    
+			    <Button
+					android:id="@+id/BSearch"  
+			    	android:layout_width="wrap_content" 
+			    	android:layout_height="fill_parent"
+			    	android:text="Search" 
+			    	android:layout_weight="1"	
+			  	/>    
+			    	
+		    </LinearLayout>
+	    </LinearLayout>
+	    
+	    <!-- Station Input Area -->
+	    <LinearLayout 
+	    	android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    >
+		    <LinearLayout 
+		    	android:orientation="vertical"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		    >
+			    <LinearLayout
+				    	android:orientation="horizontal"
+				    	android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:layout_weight="1"
+			    >
+			    	<TextView android:layout_width = "wrap_content"
+						android:layout_height = "wrap_content"
+						android:text = "Curr: "
+						android:textSize = "8pt"
+						/>
+			    	
+					<AutoCompleteTextView
+						android:id="@+id/current_station"  
+				    	android:layout_width="fill_parent" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_weight="1"
+				    />
+			    </LinearLayout> <!-- horizontal, current station input -->
+			    <LinearLayout
+				    	android:orientation="horizontal"
+				    	android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:layout_weight="1"
+			    >
+			    	<TextView android:layout_width = "wrap_content"
+						android:layout_height = "wrap_content"
+						android:text = "Targ: "
+						android:textSize = "8pt"
+						/>
+			    	
+					<AutoCompleteTextView
+						android:id="@+id/target_station"  
+				    	android:layout_width="fill_parent" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_weight="1"
+				    />
+			    </LinearLayout> <!-- horizontal, target station input -->
+		
+			</LinearLayout> <!-- vertical, two station input -->
+			
+			<RadioGroup
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical">
+			  
+			  <RadioButton android:id="@+id/radio_current"
+			      android:layout_width="wrap_content"
+			      android:layout_height="wrap_content"
+			      />
+			  
+			  <RadioButton android:id="@+id/radio_target"
+			      android:layout_width="wrap_content"
+			      android:layout_height="wrap_content"
+			      />
+			  
+			</RadioGroup>
+		</LinearLayout> 	    <!-- End of Station Input Area -->
+    </LinearLayout>
+
+    <LinearLayout
+    	android:id="@+id/layout_keyboard" 	
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="2"
+    >
+    
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+    <Button android:id="@+id/BA" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="A"	/>
+    <Button android:id="@+id/BB" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="B"	/>
+    <Button android:id="@+id/BC" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="C"	/>
+    <Button android:id="@+id/BD" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="D"	/>
+    <Button android:id="@+id/BE" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="E"	/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+    <Button android:id="@+id/BF" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="F"	/>
+    <Button android:id="@+id/BG" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="G"	/>
+    <Button android:id="@+id/BH" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="H"	/>
+    <Button android:id="@+id/BI" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="I"	/>
+    <Button android:id="@+id/BJ" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="J"	/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+    <Button android:id="@+id/BK" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="K"	/>
+    <Button android:id="@+id/BL" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="L"	/>
+    <Button android:id="@+id/BM" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="M"	/>
+    <Button android:id="@+id/BN" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="N"	/>
+    <Button android:id="@+id/BO" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="O"	/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+    <Button android:id="@+id/BP" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="P"	/>
+    <Button android:id="@+id/BQ" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="Q"	/>
+    <Button android:id="@+id/BR" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="R"	/>
+    <Button android:id="@+id/BS" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="S"	/>
+    <Button android:id="@+id/BT" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="T"	/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+    <Button android:id="@+id/BU" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="U"	/>
+    <Button android:id="@+id/BV" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="V"	/>
+    <Button android:id="@+id/BW" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="W"	/>
+    <Button android:id="@+id/BX" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="X"	/>
+    <Button android:id="@+id/BY" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="Y"	/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+    <Button android:id="@+id/BZ" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="Z"	/>
+    <Button android:id="@+id/BBack" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:text="&lt;-"	/>
+    <Button android:id="@+id/BBlank" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="2" android:text=" "	/>
+    <!--  -->Button android:id="@+id/BHist" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="2" android:text="Hist"	/-->
+    
+	<Button android:id="@+id/BESC" android:layout_width="wrap_content" android:layout_height="fill_parent"  android:text="NoDrop" android:layout_weight="2"	
+			    	/>    
+    </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>
